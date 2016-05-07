@@ -1,0 +1,24 @@
+@media only screen and (max-width: $l-container) {
+
+  // All CSS rules for mobiles should use attribute selectors table[class="header"] (or it will be misinterpreted by Yahoo Mail)
+
+  // The following clients do not support media queries:
+  // Gmail
+  // Outlook.com
+  // Lotus Notes 6.5,7,8
+  // Android 2.1 and older
+  // MS Windows Mobile 6.1,7,8
+  // MS Surface
+  // MS Outlook Exchange (Android)
+  // Blackberry OS5
+
+  // https://www.campaignmonitor.com/dev-resources/guides/mobile/
+  // http://www.campaignmonitor.com/guides/mobile/
+
+  table[grid-col] {
+    img {
+      // margin: 0 auto; // uncomment if you want image to be centered on mobile
+    }
+  }
+
+}

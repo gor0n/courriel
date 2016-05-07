@@ -1,0 +1,45 @@
+// ==================================================
+// Project Styles
+// ==================================================
+
+a,
+body,
+p,
+td {
+  font-family: $ff-primary;
+}
+
+a {
+  color: $c-primary;
+}
+
+.l-notice {
+  td[grid-col] {
+    td {
+      padding: 5px;
+      text-align: center;
+
+      a {
+        font-size: 14px;
+        color: $c-black-400;
+      }
+    }
+  }
+}
+
+.l-footer,
+.l-header {
+  td[grid-col] {
+    background-color: $c-primary;
+
+    table > tr > td {
+      padding: $l-spacing-row $l-spacing-col;
+    }
+  }
+}
+
+.l-social {
+  td {
+    padding: 0 $l-spacing-col;
+  }
+}

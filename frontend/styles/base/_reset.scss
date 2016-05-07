@@ -1,0 +1,99 @@
+// ==================================================
+// Reset
+// ==================================================
+
+body {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse;
+}
+
+table,
+td,
+tr {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0 none;
+  outline: none;
+  line-height: 100%;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  clear: both;
+}
+
+a img {
+  border: none;
+}
+
+sup {
+  vertical-align: top;
+  font-size: .6em;
+  line-height: normal;
+}
+
+// ==================================================
+// Client-specific Styles & Reset
+// http://templates.mailchimp.com/development/css/client-specific-styles/
+// ==================================================
+
+// Outlook.com / Hotmail
+
+.ExternalClass {
+  width: 100%;
+
+  div,
+  font,
+  p,
+  span,
+  td {
+    line-height: 100%;
+  }
+}
+
+// Outlook 2007 / 2010 / 2013
+
+#outlook a {
+  padding: 0;
+}
+
+table {
+  mso-table-lspace: 0;
+  mso-table-rspace: 0;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+// OSX / iOS
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+// Windows Mobile
+
+body {
+  -ms-text-size-adjust: 100%;
+}

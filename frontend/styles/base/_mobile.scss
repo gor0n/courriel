@@ -1,0 +1,50 @@
+@media only screen and (max-width: $l-container) {
+  table[class='body'] center {
+    min-width: 0 !important;
+  }
+
+  table[class='body'] .l-container {
+    width: 95% !important;
+  }
+
+  table[class='body'] .l-row {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  table[class='body'] .l-expander {
+    width: 1px !important;
+  }
+
+  // Columns
+  [grid-col] {
+    // By default all columns are 100% width in mobile
+    & > table {
+      display: block !important;
+      width: 100% !important;
+      float: none !important;
+
+      & > tbody > tr > td {
+        width: 100% !important;
+      }
+    }
+
+    .full-width {
+      width: 100% !important;
+    }
+  }
+
+  td {
+    @for $i from 1 through $l-columns {
+      &[grid-col-sm='#{$i}'] {
+        width: ((100%/$l-columns) * $i) !important;
+      }
+    }
+  }
+
+  td[grid-col-sm='12'] {
+    display: block !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

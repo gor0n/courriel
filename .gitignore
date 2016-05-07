@@ -1,0 +1,19 @@
+# Build
+# ------------------------------------------
+node_modules/
+npm-debug.log
+public/templates/
+
+# OS/IDE Generated
+# ------------------------------------------
+# MacOSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Netbeans
+nbproject/
+
+# Jetbrains
+.idea/

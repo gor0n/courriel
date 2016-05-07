@@ -1,0 +1,115 @@
+// ==================================================
+// Layout Styles
+// ==================================================
+
+table {
+  &.body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  &.l-container {
+    width: $l-container;
+    margin: 0 auto;
+    text-align: inherit;
+
+    table.l-row {
+      display: block;
+    }
+  }
+
+  &.l-row {
+    position: relative;
+    width: 100%;
+    padding: 0;
+
+    [grid-col] {
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+td.l-expander {
+  visibility: hidden;
+  width: 0;
+  padding: 0 !important;
+}
+
+// Columns
+
+td {
+  @for $i from 1 through $l-columns {
+    &[grid-col='#{$i}'] {
+      &,
+      .full-width {
+        width: (($l-container/$l-columns) * $i);
+      }
+      @for $j from 2 through $l-columns {
+        $l-containerWPad: $l-container - ($l-spacing-col * ($j - 1));
+
+        .l-spacing-col[grid='#{$j}'] &,
+        .l-spacing[grid='#{$j}'] & {
+          &,
+          .full-width {
+            width: (($l-containerWPad/$l-columns) * $i);
+          }
+        }
+      }
+    }
+  }
+
+  [grid-col] {
+    & > table {
+      width: 100%;
+    }
+  }
+}
+
+// Helpers
+
+table {
+  &.l-spacing {
+    [grid-col] {
+      padding: $l-spacing-row/2 $l-spacing-col/2;
+
+      & > table {
+        td {
+          padding-bottom: $l-spacing-row;
+        }
+      }
+    }
+
+    &-row {
+      [grid-col] {
+        &:first-child {
+          padding-top: $l-spacing-row;
+          padding-bottom: $l-spacing-row;
+        }
+
+        &:not(:first-child) {
+          padding-bottom: $l-spacing-row;
+        }
+
+        & > table {
+          td {
+            padding-bottom: $l-spacing-row;
+          }
+        }
+      }
+    }
+
+    &-col {
+      [grid-col] {
+        padding-left: $l-spacing-col/2;
+        padding-right: $l-spacing-col/2;
+      }
+    }
+  }
+}

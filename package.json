@@ -1,0 +1,28 @@
+{
+  "name": "Courriel",
+  "description": "Responsive email framework",
+  "version": "0.1.0",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-inline-css": "^3.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.5"
+  },
+  "scripts": {
+    "postinstall": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gor0n/courriel.git"
+  },
+  "homepage": "https://github.com/gor0n/courriel/blob/master/README.md"
+}
