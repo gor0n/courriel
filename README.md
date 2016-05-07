@@ -1,8 +1,8 @@
-# **Courriel** #
+# **Courriel**
 
 A responsive email framework with modern tools including sass, a grid and a build system to quickly craft responsive emails.
 
-## Supported email clients ##
+## Supported email clients
 
 - Outlook (2003/2007/2010/2011/2013/2016)
 - Outlook.com
@@ -13,7 +13,7 @@ A responsive email framework with modern tools including sass, a grid and a buil
 
 Tested on [Litmus](https://litmus.com/)
 
-## Getting started ##
+## Getting started
 
 You need to have `node` and `gulp` installed. If you have them, you just need to run this task.
 ```
@@ -21,7 +21,7 @@ You need to have `node` and `gulp` installed. If you have them, you just need to
 ```
 It will install nodejs dependencies then run `gulp` to generate files in public directory.
 
-## Structure ##
+## Structure
 
 ```
 |
@@ -45,13 +45,13 @@ It will install nodejs dependencies then run `gulp` to generate files in public 
 |
 ```
 
-## Grid system ##
+## Grid system
 
 By default the grid is a 12 columns grids but you can change it in SASS variables. The grid system uses attributes to control columns.
 
 You have to declare how many grid blocks you have in a row with `grid="2"` then specify their sizes on each of them with something like `grid-col="6" grid-col-sm="12"`.
 
-#### Example for two columns row ####
+#### Example for two columns row
 
 ```
 <table class="l-row l-spacing" grid="2">
@@ -81,21 +81,21 @@ If the container size is set to 600px (default), we'll have two columns above 60
 
 You'll find more examples in [frontend/templates/template.html](https://bitbucket.org/gor0n/courriel/src/3343464fd77596d1a1575089b99e03ba412a37c0/frontend/templates/template.html?at=master&fileviewer=file-view-default) and code snippets in [frontend/snippets](https://bitbucket.org/gor0n/courriel/src/3343464fd77596d1a1575089b99e03ba412a37c0/frontend/snippets/?at=master).
 
-## Layout helpers ##
+## Layout helpers
 
-#### `.l-spacing` ####
+#### `.l-spacing`
 Add this class on a row to add padding between columns and between rows.
 
-#### `.l-spacing-row` ####
+#### `.l-spacing-row`
 Add this class on a row to add padding between rows only.
 
-#### `.l-spacing-columns` ####
+#### `.l-spacing-columns`
 Add this class on a row to add padding between columns only.
 
-#### `.l-expander` ####
+#### `.l-expander`
 Add an empty cell with this class to force your column to be full-width when you don't have enough content.
 
-## Build system ##
+## Build system
 
 Gulp configs and individual tasks are located in build folder.
 
@@ -118,7 +118,7 @@ Task Name     | Description
 `template`    | Inline CSS into templates then inject media queries on top of it
 `styles:clean`| Clean generated CSS files after template task
 
-## Copyright ##
+## Copyright
 
 The MIT License (MIT) Copyright © 2016 Vivian Verswyvel
 
