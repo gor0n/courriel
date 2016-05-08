@@ -1,6 +1,8 @@
+![Courriel logo](http://base.iconpaper.org/courriel.png)
+
 # **Courriel**
 
-A responsive email framework with modern tools including sass, a grid and a build system to quickly craft responsive emails.
+A responsive email framework with modern tools including sass, a grid and a build system with retina images support to quickly craft responsive emails.
 
 ## Supported email clients
 
