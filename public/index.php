@@ -26,7 +26,7 @@
         margin: 0;
         font-size: 3.75rem;
         font-weight: 300;
-        color: #455a64;
+        color: #b5b7b6;
       }
 
       h1 small {
