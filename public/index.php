@@ -27,6 +27,7 @@
         font-size: 3.75rem;
         font-weight: 300;
         color: #b5b7b6;
+        -webkit-font-smoothing: antialiased;
       }
 
       h1 small {
