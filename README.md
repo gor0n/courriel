@@ -81,7 +81,7 @@ You have to declare how many grid blocks you have in a row with `grid="2"` then 
 ```
 If the container size is set to 600px (default), we'll have two columns above 600px and 1 column below.
 
-You'll find more examples in [frontend/templates/template.html](https://bitbucket.org/gor0n/courriel/src/3343464fd77596d1a1575089b99e03ba412a37c0/frontend/templates/template.html?at=master&fileviewer=file-view-default) and code snippets in [frontend/snippets](https://bitbucket.org/gor0n/courriel/src/3343464fd77596d1a1575089b99e03ba412a37c0/frontend/snippets/?at=master).
+You'll find more examples in [frontend/templates/template.html](https://github.com/gor0n/courriel/blob/master/frontend/templates/template.html) and code snippets in [frontend/snippets](https://github.com/gor0n/courriel/tree/master/frontend/snippets).
 
 ## Layout helpers
 
