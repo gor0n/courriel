@@ -61,7 +61,7 @@
   </head>
 
   <body class="l-home">
-    <h1>Courriel <small>reponsive email framework</small></h1>
+    <h1>Courriel <small>responsive email framework</small></h1>
     <div class="template__group">
       <?php
         if ($handle = opendir('./templates')) {
