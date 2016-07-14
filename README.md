@@ -1,4 +1,4 @@
-![Courriel logo](http://base.iconpaper.org/courriel.png)
+![Courriel logo](http://i.imgur.com/y1vRjzX.png)
 
 # **Courriel**
 
