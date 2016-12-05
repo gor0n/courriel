@@ -4,7 +4,12 @@
   }
 
   table[class='body'] .l-container {
-    width: 95% !important;
+    width: 100% !important;
+
+    & > tbody > tr > td {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
   }
 
   table[class='body'] .l-row {
@@ -31,6 +36,7 @@
 
     .full-width {
       width: 100% !important;
+      height: auto !important;
     }
   }
 
