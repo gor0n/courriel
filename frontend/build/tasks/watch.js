@@ -4,8 +4,9 @@
 // Load modules
 // ==================================================
 
-var gulp   = require('gulp'),
-    notify = require('gulp-notify');
+var gulp        = require('gulp'),
+    runSequence = require('run-sequence'),
+    notify      = require('gulp-notify');
 
 // ==================================================
 // Load configurations
@@ -13,6 +14,7 @@ var gulp   = require('gulp'),
 
 var paths         = require('../configs/paths'),
     project       = require('../configs/project'),
+    images        = require('../configs/images'),
     notifications = require('../configs/notifications');
 
 // ==================================================
@@ -21,17 +23,15 @@ var paths         = require('../configs/paths'),
 
 gulp.task('watch', function() {
   // Images
-  if (styles.enabled) {
-    gulp.watch(paths.src.images + '**/*.{'+ images.extensions +'}', ['images', function() {
-      if (notifications.enabled) {
-        gulp.src('.').pipe(notify({
-          sound: notifications.mute ? false : notifications.sound,
-          icon: './node_modules/gulp-notify/assets/gulp.png',
-          message: 'Images copied',
-        }));
-      }
-    }]);
-  }
+  gulp.watch(paths.src.images + '**/*.{'+ images.extensions +'}', ['images', function() {
+    if (notifications.enabled) {
+      gulp.src('.').pipe(notify({
+        sound: notifications.mute ? false : notifications.sound,
+        icon: './node_modules/gulp-notify/assets/gulp.png',
+        message: 'Images copied',
+      }));
+    }
+  }]);
 
   // Styles
   gulp.watch(paths.src.styles + '**/*.scss',  function() {
